@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Lavishly+Yours&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Mountains+of+Christmas:wght@400;700&family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Mountains+of+Christmas:wght@400;700&family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://db.onlinewebfonts.com/c/ef6c4f19c26fbcd2b5202a88ddd932f5?family=Benguiat%2A+Bold');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+p,h1{
+    color: white;
+}
+header{
+    display: flex;
+    width: 100%;
+    padding: 20px 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 10;
+}
+.main-header-left{
+    display: flex;
+    gap: 40px;
+}
+header ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+header ul>li{
+    list-style: none;
+}
+header ul>li a{
+    text-decoration: none;
+    color: white;
+}
+header ul>li a:hover{
+    color: rgba(245, 245, 245, 0.781);
+    transition: all 0.2s ease;
+}
+header img{
+    width: 100px;
+}
+.hero-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0px;
+}
+.upper-main{
+    margin-left: 100px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.lower-main{
+    margin-left: 100px;
+    z-index: 99999;
+    /* margin-bottom: 100px; */
+}
+.lower-main button{
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-right: 20px;
+    border-radius: 5px;
+    border-style: none;
+}
+.pr-btn{
+    background-color: rgba(240, 248, 255, 0.845);
+}
+.sr-btn{
+    background-color: rgba(128, 128, 128, 0.623);
+    color: rgba(240, 248, 255, 0.845);
+}
+button:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.lower-main button div{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.upper-main>h1{
+    font-family: "Benguiat* Bold";
+    font-size: 4rem;
+    color: red;
+}
+.main-hero{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    
+}
+.hero-section video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.new-on-netflix{
+    width: 100%;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.863);
+    position: relative;
+    top: -70px;
+}
+.scroll-section{
+    margin-left: 2vw;
+    width: 95vw;
+    height: 35vh;
+    /* background-color: white; */
+    /* position: relative; */
+    z-index: 100;
+    top: -70px;
+    padding: 20px;
+}
+.scroll-section h1{
+    color: whitesmoke;
+}
+.scroll-main-video{
+    width: 100%;
+    height: 350px;
+    padding: 0px 30px;
+    /* background-color: rgba(0, 0, 0, 0.689); */
+    display: flex;
+    /* flex-wrap: nowrap; */
+    gap: 20px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    align-items: center;
+}
+.video-scroll{
+    width: 300px;
+    /* height: 100%; */
+    flex-shrink: 0;
+    z-index: 100;
+    /* background-color: grey  ; */
+    border-radius: 10px;
+    padding-top: 0px;
+}
+.video-scroll img{
+    width: 100%;
+    /* height: 100%; */
+    padding-top: 0px;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+.in-hover{
+    display: none;
+}
+.icons-a{
+    
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+.video-scroll:hover{
+    transition: all 0.6s ease;
+    transform: scale(1,1.25);
+    overflow: hidden;
+    .in-hover{
+        display: block;
+        margin-bottom: 5px;
+        margin: 5px;
+    }
+}
+/* .video-scroll img:hover{
+    height: 60%;
+    object-fit: contain;
+    transition: all 0.6s ease-in-out;
+} */
